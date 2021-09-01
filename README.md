@@ -1,26 +1,32 @@
 # PA Black Vaccination Rate by Zip Code
 Made by the [Black Equity Coalition](https://www.blackequitypgh.org/) and the [Western Pennsylvania Regional Data Center](https://www.wprdc.org).
 
-[![Screenshot of map](screenshot.png)](
-https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/)
+[![Screenshot of map](screenshot.png)](https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/)
 https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/
 
 This map **estimates** the vaccination rates by dividing the vaccination counts from [PA's vaccination data](https://data.pa.gov/Covid-19/COVID-19-Vaccinations-by-Zip-Code-by-Race-Current-/g743-p9su) by an esitmate of the population eligible for vaccination generated from [American Community Survey](https://www.census.gov/programs-surveys/acs) data.
 
 ## ⚠️ Caution
 * The ACS population numbers are estimates, and may undercount the Black/African American or other populations. There may also be differences between how people report race or ethnicity between the ACS and in the vaccination data, and there may also be issues with how residence is reported in the vaccination data. As a result, some zip codes may show rates greater than 100%. Zip codes with a low Black population and extemely high vaccination rates (> 200%) have been removed from the map.
-* Assumptions have been made in a attempts to esimate population counts. Check-out the [Methods section](#population-estimation-methods) for details.
+* Assumptions have been made in a attempts to esimate population counts. Check-out the [Methods section](#-population-estimation-methods) for details.
 
-## Share
+## 💾 Download
+Data stored in the [/data](/data) folder may be stale and not match the current set of data in the map.  Please check the modification dates in github.  An archive of the commonwealth's data updates can be found [on the WPRDC](https://data.wprdc.org/dataset/weekly-pennsylvania-covid-19-vaccinations-stats-archive).
+
+* [csv](https://github.com/WPRDC/bec-vaccination-map/raw/main/data/Black_Vaccination_Rate_by_Zip_Code.csv)  
+* [geojson](https://github.com/WPRDC/bec-vaccination-map/raw/main/data/Black_Vaccination_Rate_by_Zip_Code.geojson)  
+* [shapefile](https://github.com/WPRDC/bec-vaccination-map/raw/main/data/Black_Vaccination_Rate_by_Zip_Code.zip)  
+
+## 📣 Share
 * This page: https://github.dev/WPRDC/bec-vaccination-map
 * The map: https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/
 * Embded code: `<iframe width="100%" height="520" frameborder="0" src="https://wprdc-maps.carto.com/u/wprdc/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 `
 
-## Update Frequency
+## 📆 Update Frequency
 The data for this map updates as frequently as the PA Department of Health updates their release on the PA Open Data portal.  Population numbers are esimates from 2019; once 2020 census data is available at the zip code level, population numbers may be updated.
 
-## Data Sources
+## 🗄️ Data Sources
 ### Pennsylvania's COVID-19 vaccination data
 Provides vaccination numbers by race per zip code.  
 https://data.pa.gov/Covid-19/COVID-19-Vaccinations-by-Zip-Code-by-Race-Current-/g743-p9su
@@ -43,7 +49,7 @@ table | description
 | B01001B_018 	|	black girls < 5 |
 | B01001B_019 	|	black girls 5 - 9 |
 
-## Population Estimation Methods
+## 🧮 Population Estimation Methods
 To estimate the number of people elgible for vaccinations in a zip code, we attempt to estimate the number of people 12 or older.  
 1. Get total population and population under 10y/o counts (`kid_pop` below) from ACS for everyone and just the Black population.
 ```python
@@ -67,5 +73,5 @@ total_black_eligible = total_black_pop - total_black_ineligible
 
 ## Extras
 * [Code snippets](notes.md)
-* [Popultion data by Zip code](zip_code_pop.2019.csv)
+* [Popultion data by Zip code](zip_code_pop_2019.csv)
 
