@@ -1,5 +1,5 @@
 # PA Black Vaccination Rate by Zip Code
-Made by the [Western Pennsyvlania Regional Data Center](https://www.wprdc.org) and the [Black Equity Coalition](https://www.blackequitypgh.org/).
+Made by the [Black Equity Coalition](https://www.blackequitypgh.org/) and the [Western Pennsyvlania Regional Data Center](https://www.wprdc.org).
 
 [![Screenshot of map](screenshot.png)](
 https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/)
