@@ -3,7 +3,7 @@
 ## SQL query backing the map
 There are some steps missing between the data extaction and getting to this point, but hopefully this get across how the data was generated.
 
-```postgresql
+```sql
 SELECT *
 FROM (SELECT *,
              -- percents
@@ -17,14 +17,14 @@ FROM (SELECT *,
                    z.the_geom_webmercator,
 
                    z.black_pop                                   as black_pop,
-                   z.black_kid_pop                               as black_kid_pop,
-                   z.black_pop - z.black_kid_pop                 as black_eligible,
+                   z.black_kid_pop * 1.2                         as black_kid_pop,
+                   z.black_pop - (z.black_kid_pop * 1.2)         as black_eligible,
                    z.black_pop_margin                            as black_pop_margin,
                    z.black_kid_pop_margin                        as black_kid_pop_margin,
 
                    z.total_pop                                   as total_pop,
-                   z.kid_pop                                     as total_kid_pop,
-                   z.total_pop - z.kid_pop                       as total_eligible,
+                   z.kid_pop * 1.2                               as total_kid_pop,
+                   z.total_pop - (z.kid_pop * 1.2)               as total_eligible,
                    z.total_pop_margin                            as total_pop_margin,
                    z.kid_pop_margin                              as total_kid_pop_margin,
 
