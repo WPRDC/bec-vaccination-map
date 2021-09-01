@@ -3,8 +3,9 @@ Made by the [Black Equity Coalition](https://www.blackequitypgh.org/) and the [W
 
 [![Screenshot of map](screenshot.png)](
 https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/)
-
 https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/
+
+This map **estimates** the vaccination rates by dividing the vaccination counts from [PA's vaccination data](https://data.pa.gov/Covid-19/COVID-19-Vaccinations-by-Zip-Code-by-Race-Current-/g743-p9su) by an esitmate of the population eligible for vaccination generated from [American Community Survey](https://www.census.gov/programs-surveys/acs) data.
 
 ## ⚠️ Caution
 * The ACS population numbers are estimates, and may undercount the Black/African American or other populations. There may also be differences between how people report race or ethnicity between the ACS and in the vaccination data, and there may also be issues with how residence is reported in the vaccination data. As a result, some zip codes may show rates greater than 100%. Zip codes with a low Black population and extemely high vaccination rates (> 200%) have been removed from the map.
@@ -15,9 +16,6 @@ https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/
 * The map: https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/
 * Embded code: `<iframe width="100%" height="520" frameborder="0" src="https://wprdc-maps.carto.com/u/wprdc/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 `
-
-This map **estimates** the vaccination rates by dividing the vaccination counts from [PA's vaccination data](https://data.pa.gov/Covid-19/COVID-19-Vaccinations-by-Zip-Code-by-Race-Current-/g743-p9su) by an esitmate of the population eligible for vaccination. 
-
 
 ## Update Frequency
 The data for this map updates as frequently as the PA Department of Health updates their release on the PA Open Data portal.  Population numbers are esimates from 2019; once 2020 census data is available at the zip code level, population numbers may be updated.
@@ -63,7 +61,8 @@ total_black_ineligible = black_kid_pop * 1.2
 3. Subtract that from the total popuation to get an esimate of the eligible populations per zip code.
 ```python
 total_eligible = total_pop - total_ineligible
-total_black_ineligible = black_kid_pop * 1.2
+total_black_eligible = total_black_pop - total_black_ineligible
+
 ```
 
 ## Extras
