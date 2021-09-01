@@ -1,14 +1,14 @@
 # PA Black Vaccination Rate by Zip Code
-Made by the [Western Pennsyvlania Regional Data Center](https://www.wprdc.org) for the [Black Equity Coalition](https://www.blackequitypgh.org/).
+Made by the [Western Pennsyvlania Regional Data Center](https://www.wprdc.org) and the [Black Equity Coalition](https://www.blackequitypgh.org/).
 
 [![Screenshot of map](screenshot.png)](
 https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/)
 
 https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/
 
-## ⚠️ Cuation
-* The ACS population numbers are estimates, and may undercount the Black/African American or other populations. Therefore some zip codes may show rates greater than 100%. Zip codes with a low Black population and extemely high vaccination rates (> 200%) have been removed from the map.
-* Assumptions have been made in a attempts to esimate population counts. Checkout the [Methods section](#population-estimation-methods) for details.
+## ⚠️ Caution
+* The ACS population numbers are estimates, and may undercount the Black/African American or other populations. There may also be differences between how people report race or ethnicity between the ACS and in the vaccination data, and there may also be issues with how residence is reported in the vaccination data. As a result, some zip codes may show rates greater than 100%. Zip codes with a low Black population and extemely high vaccination rates (> 200%) have been removed from the map.
+* Assumptions have been made in a attempts to esimate population counts. Check-out the [Methods section](#population-estimation-methods) for details.
 
 ## Share
 * This page: https://github.dev/WPRDC/bec-vaccination-map
