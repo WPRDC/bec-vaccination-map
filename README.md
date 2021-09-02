@@ -20,6 +20,8 @@ This map **estimates** the vaccination rates by dividing the vaccination counts 
 ## About Vaccine Hesitancy
 As efforts to produce a vaccine ramped up, there was much media discussion regarding the presumed vaccine hesitancy of African Americans. Recognizing the harm, trauma, and distrust caused by public health officials and practitioners, medical researchers, pharmaceutical companies, and the federal government in their historic and many contemporary engagements with Black and brown communities, we understand the hesitancy is rooted in distrust, not of the science of vaccinations, but of the institutions and scientists. Members of the BEC are actively engaged in activities to work with these institutions on practices to increase their trustworthiness.
 
+Add text on barriers to access here. Talk about digital access for appointment scheduling, pharmacy/health care deserts.
+
 ## 💾 Download
 Data stored in the [/data](/data) folder may be stale and not match the current set of data in the map.  Please check the modification dates in github.  An archive of the commonwealth's data updates can be found [on the WPRDC](https://data.wprdc.org/dataset/weekly-pennsylvania-covid-19-vaccinations-stats-archive).
 
