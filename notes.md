@@ -6,9 +6,9 @@ There are some steps missing between the data extaction and getting to this poin
 ```sql
 SELECT *
 FROM (SELECT *,
-             -- percents
-             TRUNC((100 * fully_covered_african_american::numeric / black_eligible::numeric), 1) as pct_black_covered,
-             TRUNC((100 * fully_covered_total::numeric / total_eligible::numeric), 1)            as pct_covered
+             -- percents, truncated to whole numbers as to not give impression of accuracy
+             TRUNC((100 * fully_covered_african_american::numeric / black_eligible::numeric), 0) as pct_black_covered,
+             TRUNC((100 * fully_covered_total::numeric / total_eligible::numeric), 0)            as pct_covered
       FROM (SELECT z.cartodb_id,
                    z.zip_code                                    as geoid,
                    z.zip_code                                    as zip_code,
@@ -35,6 +35,7 @@ FROM (SELECT *,
 
             FROM (
                      SELECT *,
+                            -- sum the counts up, replacing NULLs with 0
                             (COALESCE(fully_covered_african_american, 0)
                                 + COALESCE(fully_covered_asian, 0)
                                 + COALESCE(fully_covered_native_american, 0)
