@@ -7,7 +7,7 @@ https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/
 This map **estimates** the vaccination rates by dividing the vaccination counts from [PA's vaccination data](https://data.pa.gov/Covid-19/COVID-19-Vaccinations-by-Zip-Code-by-Race-Current-/g743-p9su) by an esitmate of the population eligible for vaccination generated from [American Community Survey](https://www.census.gov/programs-surveys/acs) data.
 
 ## ⚠️ Caution
-* The ACS population numbers are estimates, and may undercount the Black/African American or other populations. 
+* The ACS population numbers are estimates, and methods may undercount the Black/African American community and other populations. 
 * There may be differences between how people report race or ethnicity between the ACS and in the vaccination data. About 9% of the total records in the Allegheny County vaccine data report multiple races, compared to less than 3% of the total population reporting two or more races in the 2019 ACS estimates. 
 * About 10% of Allegheny County's vaccination records are reported as race unknown. This missing data may underestimate the % of people vaccinated by racial group.
 * Processes linking the vaccination records of people across doses may not correctly match people across doses. The PA Department of Health has developed more-effective matching techniques to connect first and second doses, and released data on 7/9/2021 produced by these improved processes. Data obtained prior to this date do not capture these quality improvements. 
@@ -18,7 +18,7 @@ This map **estimates** the vaccination rates by dividing the vaccination counts 
 * Assumptions have been made in a attempts to esimate population counts. Check-out the [Methods section](#-population-estimation-methods) for details.
 
 ## About Vaccine Hesitancy
-Let's add a few sentences here from our epidemiologists that try to add more background on vaccine hesitancy.
+As efforts to produce a vaccine ramped up, there was much media discussion regarding the presumed vaccine hesitancy of African Americans. Recognizing the harm, trauma, and distrust caused by public health officials and practitioners, medical researchers, pharmaceutical companies, and the federal government in their historic and many contemporary engagements with Black and brown communities, we understand the hesitancy is rooted in distrust, not of the science of vaccinations, but of the institutions and scientists. Members of the BEC are actively engaged in activities to work with these institutions on practices to increase their trustworthiness.
 
 ## 💾 Download
 Data stored in the [/data](/data) folder may be stale and not match the current set of data in the map.  Please check the modification dates in github.  An archive of the commonwealth's data updates can be found [on the WPRDC](https://data.wprdc.org/dataset/weekly-pennsylvania-covid-19-vaccinations-stats-archive).
