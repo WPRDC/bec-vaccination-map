@@ -12,7 +12,8 @@ This map **estimates** the vaccination rates by dividing the vaccination counts 
 * Processes linking the vaccination records of people across doses may not correctly match people across doses. The PA Department of Health has developed more-effective matching techniques to connect first and second doses, and released data on 7/9/2021 produced by these improved processes. Data obtained prior to this date do not capture these quality improvements. 
 * People that received vaccinations outside of Pennsylvania are unlikely to be captured in this vaccine data. 
 * Fully-vaccinated people that received only one dose of a two dose regimen in Pennsylvania may only show up as being partially-vaccinated. 
-* Because of data issues like these, and changes to the composition of different communities, some zip codes may show vaccination rates greater than 100%. * Zip codes with a low Black population and extemely high vaccination rates (> 200%) have been removed from the map.
+* Because of data issues like these, and changes to the composition of different communities, some zip codes may show vaccination rates greater than 100%. 
+* Zip codes with a low Black population and extemely high vaccination rates (> 200%) have been removed from the map.
 * Assumptions have been made in a attempts to esimate population counts. Check-out the [Methods section](#-population-estimation-methods) for details.
 
 ## About Vaccine Hesitancy
