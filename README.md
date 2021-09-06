@@ -16,7 +16,7 @@ This map **estimates** the vaccination rates by dividing the vaccination counts 
 * Because of data issues like these, and changes to the composition of different communities, some zip codes may show vaccination rates greater than 100%. 
 * Zip codes with a low Black population and extemely high vaccination rates (> 200%) have been removed from the map.
 * Assumptions have been made in a attempts to esimate population counts. Check-out the [Methods section](#-population-estimation-methods) for details.
-* Philadelphia manages their own vaccination data collection efforts, and the data on this map does not include all vaccinations for Philadelphia residents.
+* Philadelphia manages their own vaccination data collection efforts, and the data on this map does not include all vaccinations for Philadelphia residents. Please see the [Philadelphia Vaccine Dashboard](https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/data/vaccine/) for information about vaccinations in Philadelphia.
 
 ## About Vaccine Hesitancy
 As efforts to produce a vaccine ramped up, there was much media discussion regarding the presumed vaccine hesitancy of African Americans. Recognizing the harm, trauma, and distrust caused by public health officials and practitioners, medical researchers, pharmaceutical companies, and the federal government in their historic and many contemporary engagements with Black and brown communities, we understand the hesitancy is rooted in distrust, not of the science of vaccinations, but of the institutions and scientists. Members of the BEC are actively engaged in activities to work with these institutions on practices to increase their trustworthiness.
