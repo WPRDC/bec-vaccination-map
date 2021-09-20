@@ -77,7 +77,7 @@ black_kid_pop = B01001B_003 + B01001B_004 + B01001B_018 + B01001B_019
 total_ineligible = total_kid_pop * 1.2
 total_black_ineligible = black_kid_pop * 1.2
 ```
-3. Subtract that from the total popuation to get an esimate of the eligible populations per zip code.
+3. Subtract that from the total popuation to get an estimate of the eligible populations per zip code.
 ```python
 total_eligible = total_pop - total_ineligible
 total_black_eligible = total_black_pop - total_black_ineligible
