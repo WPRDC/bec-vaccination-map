@@ -6,12 +6,18 @@ https://wprdc.carto.com/builder/0e278d3c-2c1c-4b0a-91e1-45ef982a0baa/embed#/
 
 This map **estimates** the vaccination rates by dividing the vaccination counts from [PA's vaccination data](https://data.pa.gov/Covid-19/COVID-19-Vaccinations-by-Zip-Code-by-Race-Current-/g743-p9su) by an esitmate of the population eligible for vaccination generated from [American Community Survey](https://www.census.gov/programs-surveys/acs) data.
 
+## Suggested Uses for the Data
+*  Use data to start a conversation about vaccinations, structural racism, and health equity.
+*  Track vaccination progress over time.
+*  Inform where to hold outreach and vaccination events.
+*  Look for bright spots and see what might be working in places with growing numbers of people being vaccinated.
+
 ## ⚠️ Caution
 * The ACS population numbers are estimates, and methods may undercount the Black/African American community and other populations. 
 * There may be differences between how people report race or ethnicity between the ACS and in the vaccination data. About 9% of the total records in the Allegheny County vaccine data report multiple races, compared to less than 3% of the total population reporting two or more races in the 2019 ACS estimates. 
 * About 10% of Allegheny County's vaccination records are reported as race unknown. This missing data may underestimate the % of people vaccinated by racial group.
 * Processes linking the vaccination records of people across doses may not correctly match people from their first to second doses. The PA Department of Health has developed more-effective matching techniques to connect first and second doses, and released data on 7/9/2021 produced by these improved processes. Data obtained prior to this date do not capture these quality improvements. 
-* People that received vaccinations outside of Pennsylvania are unlikely to be captured in this vaccine data. 
+* People that received vaccinations outside of Pennsylvania or at a federal facility (including VA hospitals or federal prisons) are unlikely to be captured in this vaccine data. 
 * Fully-vaccinated people that received only one dose of a two dose regimen in Pennsylvania may only show up as being partially-vaccinated. 
 * Because of data issues like these, and changes to the composition of different communities, some zip codes may show vaccination rates greater than 100%. 
 * Zip codes with a low Black population and extemely high vaccination rates (> 200%) have been removed from the map.
