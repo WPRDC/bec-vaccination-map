@@ -10,7 +10,7 @@ This map **estimates** the vaccination rates by dividing the vaccination counts 
 *  Use data to start a conversation about vaccinations, structural racism, and health equity.
 *  Track vaccination progress over time.
 *  Inform where to hold outreach and vaccination events.
-*  Look for bright spots and see what might be working in places with growing numbers of people being vaccinated.
+*  Look for bright spots and see what might be working in places with growing numbers or high rates of people being vaccinated.
 
 ## ⚠️ Caution
 * The ACS population numbers are estimates, and methods may undercount the Black/African American community and other populations. 
